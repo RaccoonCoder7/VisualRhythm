@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Mandoo
+    uniqueID: 3893003901
+    locked: 0
