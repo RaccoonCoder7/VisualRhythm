@@ -16,4 +16,5 @@ Rhythm Heaven, Rhythm Doctor, Crypt of the NecroDancer, BULLETS PER MINUTE 에�
 
 </br>
 
-## 사진/영상 (개발 후 촬영)
+## 사진/영상 (영상은 클릭 시 유튜브로 이동 됨)
+[![그림자스텝](http://img.youtube.com/vi/GKYeRbWQTQc/0.jpg)](https://youtu.be/GKYeRbWQTQc)
