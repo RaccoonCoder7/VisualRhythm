@@ -20,6 +20,11 @@ public class BPMManager : MonoBehaviour
     public int currentActionCount = 0;
     public double beatTime = 0d;
     public bool isReadyToStart = false;
+
+    [Header("ContextMenuProps")]
+    public int startIndex;
+    public int endIndex;
+
     private double pastTime = 0d;
     private int currentWaitingBeat;
     private bool rested = false;
@@ -49,7 +54,10 @@ public class BPMManager : MonoBehaviour
             if (!audioSource.isPlaying)
             {
                 audioSource.Play();
-                StartCoroutine(FadeOut(audioSource.clip.length));
+                if (fadeOutPanel != null)
+                {
+                    StartCoroutine(FadeOut(audioSource.clip.length));
+                }
             }
 
             if (pastTime < restTime)
@@ -127,5 +135,14 @@ public class BPMManager : MonoBehaviour
         File.WriteAllText("Assets/BeatActionList.txt", sb.ToString());
         Debug.Log("Create Json File " + Application.dataPath + "/BeatActionList.txt");
         AssetDatabase.Refresh();
+    }
+
+    [ContextMenu("Copy Beat Action")]
+    private void CopyBeatAction()
+    {
+        for (int i = startIndex; i <= endIndex; i++)
+        {
+            beatActionList.Add(beatActionList[i]);
+        }
     }
 }
