@@ -10,7 +10,7 @@ Rhythm Heaven, Rhythm Doctor, Crypt of the NecroDancer, BULLETS PER MINUTE 에�
 </div>
 
 ## 개요
-- 개발기간: 2020.11.05 - 2021.03.06
+- 개발기간: 2020.11.05 - 2021.03.07
 - 사용기술: Unity, C#
 - 참여자: RaccoonCoder7
 
